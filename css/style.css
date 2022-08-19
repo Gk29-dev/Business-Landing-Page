@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*{ 
+margin: 0;      
+padding:0;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.main-content{
+    display: grid;
+    row-gap: 50px;
+}
+.header-section{
+    background-color: #636c79;
+    padding:30px 50px;
+}
+.navbar nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-image{
+    flex-grow: 1;
+}
+.logo{
+    height: 30px;
+}
+.hamburger{
+    display: none;
+}
+.navbar .items{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar .items .item{
+    margin:0px 20px;
+    font-size:14px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    color:#fff;
+    cursor: pointer;
+}
+.navbar .items .item:hover{
+    color:#8bb7a2;
+}
+.nav-button{
+    margin-left:50px;
+}
+.btn{
+    padding:8px 32px;
+    outline:0;
+    border:none;
+    color:#fff;
+    background-color: transparent;
+    border:1px solid gray;
+    cursor: pointer;
+}
+.nav-action-btn:hover{
+    background-color: #8bb7a2;
+    border:1px solid transparent;
+    outline: 0;
+}
+.header-registration-section{
+    margin:30px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 200px;
+    grid-template-rows: 450px;
+}
+.registration-left img{
+    width: 550px;
+    height: 450px;
+    border-radius: 5px;
+
+}
+.registration-right{
+    margin-top: 100px;
+}
+.registration-right h1{
+    font-size:45px;
+    font-weight: 900;
+    line-height: 50px;
+    color:#fff;
+}
+.registration-right p{
+    margin:30px 0px;
+    font-size:14px;
+    width: 75%;
+    color:#fff;
+}
+/* .registration-form{
+    display: grid;
+    grid-template-columns: 10% 50% 20%;
+    border:1px solid black;
+} */
+.registration-form input[type="email"]{
+    padding:15px;
+    width: 60%;
+    border:none;
+    outline:0;
+    font-family: 'Poppins';
+    margin-top: -8px;
+}
+.registration-form i{
+    text-align: center;
+    padding:15px 0px 19px 15px;
+    background-color: #fff;
+    color:#000;
+    margin-right:-5px
+}
+.registration-form input[type="submit"]{
+    outline:none;
+    border:none;
+    padding:12px 30px;
+    position:relative;
+    right:125px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    background-color: #8bb7a2;
+    color:#fff;
+}
+.past-work{
+    padding:30px 50px 30px 50px;
+    margin:0px 50px;
+}
+.past-work-header h1{
+    text-align: center;
+    font-size:30px;
+}
+.project-work-count{
+    margin:40px 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.project-work-count h1{
+    font-weight: bolder;
+}
+.project-work-count p{
+    font-size:12px;
+    text-align: center;
+    margin: 4px 0px;
+    font-weight: 700;
+    color:#66686a;
+}
+.project-work-img img{
+    height: 600px;
+    width: 100%;
+    border-radius: 5px;
+}
+.service-section{
+    margin:0px 50px;
+    padding:20px;
+}
+.service-heading h1{
+    text-align: center;
+    font-size:35px;
+}
+.service-offer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin:60px 120px;
+}
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 200px;
+    row-gap: 70px;
+}
+.service-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-img-1 img{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    /* background-image: url('../images/pexels-fauxels-3184405.jpg');
+    background-position: right; */
+
+}
+.service-img-2 img{
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    /* background-image: url('../images/pexels-fauxels-3184603.jpg');
+    background-position: top; */
+}
+.service-img-3 img{
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    /* background-image: url('../images/pexels-linkedin-sales-navigator-2182969.jpg'); */
+}
+.service-text{
+    padding:40px 0px;
+}
+.service-text p{
+    font-size:12px;
+    margin:10px 0px;
+    line-height: 24px;
+    color:#66686a;
+}
+.service-action-btn, .more-team-member button{
+    padding:12px 36px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    background-color: #8bb7a2;
+    border:none;
+    outline: 0;
+}
+.our-team{
+    margin:0px 50px;
+}
+.team-header-section{
+    margin:5px 120px;
+}
+.team-header-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.team-heading h1{
+    font-size:30px;
+}
+.team-description p{
+    font-size:14px;
+    line-height: 24px;
+    margin-top: 5px;
+    color:#66686a;
+}
+.team-members{
+    margin:40px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 200px;
+}
+.team-member-info h4{
+    font-size:15px;
+    margin:10px 0px;
+}
+.team-member-info p{
+    font-size:12px;
+    color:#66686a;
+}
+.team-member-img{
+    width: 200px;
+    border-radius: 5px;
+}
+.more-team-member button{
+    display: block;
+    margin:10px auto;
+}
+footer{
+    background-color: #000;
+    color:#fff;
+    margin-top:50px;
+    position: relative;
+    bottom: 0;
+}
+.footer-section{
+   margin:30px 150px;
+}
+.footer-upper{
+  padding:30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.social i{
+    padding:15px;
+    background-color: #282f34;
+    border-radius: 50%;
+    margin:0px 5px;
+}
+hr{
+    color:#282f34;
+    background-color: #282f34;
+}
+.footer-bottom{
+    padding:20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-items{
+    list-style-type: none;
+}
+.list-item-heading{
+    font-size: 14px;
+}
+.list-item{
+    margin:15px 0px;
+    font-size: 12px;
+    cursor: pointer;
+    color:#66686a;
+}
+.list-item:hover{
+    color:#fff;
+}
+
+
+/* media query for mobile */
+
+@media screen and (max-width:576px) {
+    .main-content{
+        row-gap: 0px;
+    }
+    .header-section{
+        padding:30px 20px;
+    }
+   .navbar .items, .nav-action-btn{
+    display: none;
+   }
+   .hamburger{
+    display: block;
+    color:#fff;
+    font-size:30px;
+   }
+   .header-registration-section{
+    margin:30px 0px;
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+   }
+   .registration-left img{
+     width: 100%;
+     height: auto;
+     margin-top: 100px;
+   }
+   .registration-right{
+    margin-top: -40px;
+   }
+   .registration-right h1{
+    font-size:30px;
+   }
+   .registration-right p{
+    font-size: 20px;
+    width: 100%;
+   }
+   .registration-form input[type="email"] {
+    width:80%;
+   }
+   .registration-form input[type="submit"]{
+    right:0px;
+    left:68%;
+    bottom: 47px;
+    padding:12px 20px;
+   }
+   .past-work{
+    margin:30px 20px;
+    padding:0px;
+   }
+   .past-work-header h1{
+    font-size: 35px;
+    text-align: center;
+   }
+   .project-work-count{
+    margin:50px 0px;
+    flex-direction: column;
+    align-items: center;
+   }
+   .project{
+    text-align: center;
+    margin:20px 0px;
+   }
+   .project h2{
+    font-size:40px;
+   }
+   .project p{
+    font-size:20px;
+   }
+   .project-work-img{
+    margin:0px;
+   }
+   .project-work-img img{
+    height: 100%;
+   }
+   .service-section{
+    margin:40px 20px 0px 20px;
+    padding:0px;
+   }
+   .service-offer{
+    margin:60px 20px;
+    grid-template-rows: none;
+    row-gap: 40px;
+  }
+  .services{
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    column-gap: 0px;
+  }
+  .service-img-1 img,.service-img-2 img,.service-img-3 img{
+    width: 100%;
+    height: auto;
+}
+.service-text{
+    padding:0px;
+}
+   .service-text p{
+    font-size:18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+   }
+   .our-team{
+    margin:0px 20px;
+   }
+   .team-header-section{
+    margin:20px 0px;
+    grid-template-columns: 1fr;
+   }
+   .team-heading h1{
+    text-align: center;
+    margin-bottom: 20px;
+   }
+   .team-description p{
+    font-size:18px;
+    line-height: 26px;
+   }
+   .team-member-img{
+    width: 100%;
+   }
+   .team-member-info h4{
+    font-size:26px;
+    text-align: center;
+   }
+   .team-member-info p{
+    font-size:18px;
+    margin-bottom: 30px;
+   }
+   .team-members{
+    margin:40px 20px;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+   }
+   .footer-section{
+    margin:30px 20px;
+   }
+   .footer-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .social i{
+    padding:8px;
+   }
+   .list-items{
+    margin:30px 0px;
+   }
+}
+
+/* media query for tablet */
+@media screen and (min-width:600px) and (max-width:830px) {
+    .header-section{
+        padding:30px 20px;
+    }
+    .navbar .items, .nav-button{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        color:#fff;
+        font-size:30px;
+    }
+    .header-registration-section{
+        margin:30px 0px;
+        grid-template-columns: 1fr;
+    }
+    .registration-left img{
+        width: 100%;
+    }
+    .registration-right h1{
+        line-height: 56px;
+    }
+    .registration-right p{
+        font-size:20px;
+    }
+    .past-work{
+        margin:0px 20px;
+        padding:0px;
+    }
+    .past-work-header h1{
+        text-align: center;
+        font-size:50px
+    }
+    .project-work-count{
+        flex-direction: column;
+        align-items: center;
+        margin:40px 0px;
+    }
+    .project{
+        text-align: center;
+    }
+    .project h2{
+        font-size:40px;
+    }
+    .project-work-count p{
+        font-size:20px;
+    }
+    .service-section{
+        margin:40px 20px;
+        padding:0px;
+    }
+    .service-heading h1{
+        text-align: center;
+        font-size:50px;
+    }
+    .service-offer{
+        margin:60px 20px;
+        grid-template-rows: none;
+        row-gap: 40px;
+    }
+    .services{
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        column-gap: 0px;
+    }
+    .service-text{
+        padding:0px;
+    }
+    .service-text h1{
+        font-size:30px;
+    }
+    .service-text p{
+        font-size:20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .service-action-btn, .more-team-member button{
+        font-size:26px;
+    }
+    .service-img-1 img,.service-img-2 img,.service-img-3 img{
+        width: 100%;
+        height: auto;
+    }
+    .our-team{
+        margin:0px 20px;
+    }
+    .team-header-section{
+        grid-template-columns: 1fr;
+        margin:20px;
+    }
+    .team-heading h1{
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .team-description p{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .team-members{
+        margin:40px 20px;
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+    }
+    .team-member-img{
+        width: 100%;
+    }
+    .team-member-info h4{
+        font-size:26px;
+
+    }
+    .team-member-info p{
+        font-size:20px;
+    }
+    .footer-section{
+        margin:30px 20px;
+    }
+    .footer-bottom{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .list-items{
+        margin-bottom: 30px;
+    }
+    .list-item-heading{
+        font-size:26px;
+    }
+    .list-item-heading h4{
+        font-weight: 400;
+    }
+    .list-item{
+        font-size:20px;
+    }
+}
